@@ -1,0 +1,13 @@
+server:
+  rootPath: /
+  type: simple
+  applicationContextPath:  /
+  adminContextPath:        /private
+  connector:
+    type:                http
+    port:                8080
+  requestLog:
+    type: resourceSLA
+    appenders:
+      - type: console
+  registerDefaultExceptionMappers: false
